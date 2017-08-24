@@ -15,6 +15,7 @@ mongoose.connect('mongodb://localhost/hacktivrunner', (err) => {
 })
 
 const index = require('./routes/index');
+const runner = require('./routes/runner')
 const user = require('./routes/user')
 
 // app.use(logger('dev'));
@@ -24,6 +25,7 @@ app.use(cors());
 
 
 app.use('/', index);
+app.use('/runners', runner)
 app.use('/users', user)
 
 // catch 404 and forward to error handler
