@@ -13,7 +13,10 @@
     "debug": "~2.6.3",
     "dotenv": "^4.0.0",
     "express": "~4.15.3",
+<<<<<<< HEAD
+=======
     "fb": "^2.0.0",
+>>>>>>> master
     "jsonwebtoken": "^7.4.2",
     "mongodb": "^2.2.30",
     "mongoose": "^4.11.5",
