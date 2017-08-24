@@ -4,10 +4,18 @@ const express = require('express'),
     cookieParser = require('cookie-parser'),
     mongoose = require('mongoose'),
     cors = require('cors');
-    
+
 require('dotenv').config()
-    
+
+mongoose.connect('mongodb://localhost/hacktivrunner', (err) => {
+  if (err) {
+    console.log(err);
+  }
+  console.log('Database connected');
+})
+
 const index = require('./routes/index');
+const user = require('./routes/user')
 
 // app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -16,6 +24,7 @@ app.use(cors());
 
 
 app.use('/', index);
+app.use('/users', user)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
