@@ -7,7 +7,7 @@ const express = require('express'),
 
 require('dotenv').config()
 
-mongoose.connect('mongodb://localhost/hacktivrunner', (err) => {
+mongoose.connect('mongodb://irianto223:i3UAyDVoWKCupAtK@cluster0-shard-00-00-qtxxk.mongodb.net:27017,cluster0-shard-00-01-qtxxk.mongodb.net:27017,cluster0-shard-00-02-qtxxk.mongodb.net:27017/hacktivrunner?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin', (err) => {
   if (err) {
     console.log(err);
   }
