@@ -14,6 +14,18 @@
         <hr class="my-4">
         <button id="login-btn" class="btn btn-primary" type="button" onclick="FBLogin()">Login Using Facebook</button>
       </div>
+      
+      <div id="timeline-wrapper">
+        <div class="form-group">
+          <label for="textArea" class="control-label">Post New Status</label>
+          <textarea id="status" class="form-control" rows="3" id="textArea"></textarea>
+          <br/>
+          <button class="btn btn-primary" type="button" onclick="postStatus()">
+            <i class="fa fa-send"></i> Post
+          </button>
+        </div>
+        <hr/>
+      
     </div>
   </body>
 </html>
